@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio | Tu Nombre</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <nav class="navbar-content">
+      <div class="navbar-brand">
+        <a href="#inicio" class="logo">
+          <span class="logo-text">  Mi Portafolio</span>
+        </a>
+      </div>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#acerca" class="nav-link">Acerca De</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="assets/pdf/CV.pdf" download class="nav-link btn-cv">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+      <div class="hero-container">
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img src="assets/img/nicolas.jpg" alt="Tu foto" class="profile-photo">
+          </div>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Nicolás Roberto
+            <span class="gradient-text">Pronesti</span>
+          </h1>
+          <p class="hero-subtitle">Estudiante de Analista de Sistemas de Información</p>
+          <p class="hero-description">
+            Estudiante de Analista de Sistemas de Información en 3er año, 
+            con orientación en desarrollo de aplicaciones y gestión de bases de datos con SQL Server.
+          </p>
+          <div class="hero-cta">
+            <a href="#proyectos" class="btn btn-primary">
+              <span>Explorar Proyectos</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 10h6m0 0l-2-2m2 2l-2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#contacto" class="btn btn-secondary">
+              <span>Contacto</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-decoration"></div>
+    </section>
+
+    <!-- ACERCA SECTION -->
+    <section id="acerca" class="section about">
+      <div class="container">
+        <div class="section-header">
+          <h2>Acerca de Mí</h2>
+          <div class="header-line"></div>
+        </div>
+        <div class="about-content">
+          <p>
+            Soy estudiante de Analista de Sistemas de Información en 3er año,
+            con interés en el desarrollo de software y el trabajo con bases de datos. He adquirido experiencia académica en SQL Server,
+            análisis de datos y desarrollo web, aplicando pensamiento lógico y buenas prácticas de programación.
+          </p>
+          <p>
+            Mi enfoque está en crear soluciones eficientes y bien estructuradas, combinando análisis, desarrollo y gestión de la información.
+            Me motiva seguir aprendiendo, trabajar en equipo y aportar valor a proyectos que resuelvan problemas reales
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-header">
+          <h2>Habilidades Técnicas</h2>
+          <div class="header-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="assets/img/icons/html5.png" alt="HTML">
+            </div>
+            <h3>HTML</h3>
+            <p>Markup semántico</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="assets/img/icons/css.png" alt="CSS">
+            </div>
+            <h3>CSS</h3>
+            <p>Diseño responsive</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="assets/img/icons/js.png" alt="JavaScript">
+            </div>
+            <h3>JavaScript</h3>
+            <p>Interactividad</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="assets/img/icons/python.png" alt="Python">
+            </div>
+            <h3>Python</h3>
+            <p>Backend</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="assets/img/icons/sql.png" alt="SQL Server">
+            </div>
+            <h3>SQL Server</h3>
+            <p>Bases de datos</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="assets/img/icons/django.png" alt="Django">
+            </div>
+            <h3>Django</h3>
+            <p>Framework web</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS SECTION -->
+    <section id="proyectos" class="section projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Proyectos Destacados</h2>
+          <div class="header-line"></div>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/img/gaia.png" alt="Gaia">
+              <div class="project-overlay">
+                <a href="https://pronestinicolas1-del.github.io/ProyectoGaia/" class="project-btn" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>ArmoniaGaia</h3>
+              <p>Armonía Gaia es un proyecto de e-commerce orientado a la venta de sahumerios y 
+                artículos de bazar, 
+                enfocado en una experiencia simple y armoniosa para el usuario.
+                Actualmente cuenta con una landing page donde se presentan los productos y 
+                la identidad de la marca, y se encuentra en desarrollo un panel de administración 
+                que permitirá gestionar altas y bajas de productos, control de stock
+                y administración general del catálogo.
+                El backend será implementado con Node.js
+                y MongoDB para la gestión de la base de datos. 
+                El proyecto se encuentra en proceso de desarrollo, incorporando nuevas funcionalidades 
+                y tecnologías de forma progresiva.</p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <a href="https://github.com/pronestinicolas1-del/ProyectoGaia" class="project-link" target="_blank" rel="noopener noreferrer">
+                Ver en GitHub
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6 2h8v8m0 0l-8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/img/estadio.png" alt="Estadio">
+              <div class="project-overlay">
+                <a href="https://pronestinicolas1-del.github.io/TrabajoFacultad/" class="project-btn" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Turismo Futbolero</h3>
+              <p>Es un proyecto académico desarrollado como trabajo práctico para la facultad, 
+                realizado exclusivamente con HTML5 y CSS,sin uso de JavaScript ni frameworks.
+                La propuesta consiste en una landing page que presenta una idea innovadora de turismo en Argentina,
+                enfocada en recorrer y conocer estadios de fútbol, 
+                destacando su ubicación y la historia que rodea a cada uno, 
+                entendiendo al fútbol como parte fundamental de la identidad cultural del país.
+                El proyecto fue desarrollado como instancia de evaluación práctica y 
+                no corresponde a un producto real en producción.</p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS</span>
+              </div>
+              <a href="https://github.com/pronestinicolas1-del/TrabajoFacultad" class="project-link" target="_blank" rel="noopener noreferrer">
+                Ver en GitHub
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6 2h8v8m0 0l-8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/img/hamburgueseria.png" alt="Proyecto 3">
+              <div class="project-overlay">
+                <a href="https://pronestinicolas1-del.github.io/TrabajoFacultad2/" class="project-btn" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Hamburgueseria</h3>
+              <p>Es un proyecto académico desarrollado como instancia evaluativa, 
+                realizado en un tiempo limitado de 40 minutos.
+                Consiste en una landing page funcional creada con 
+                HTML5, CSS y JavaScript, orientada a la toma de pedidos de una hamburguesería.
+                El sitio permite seleccionar productos y enviar el pedido directamente 
+                por WhatsApp, simulando un flujo real de compra para un comercio gastronómico.
+                El proyecto fue realizado como práctica evaluativa y no corresponde
+                a un desarrollo comercial en producción.</p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <a href="https://github.com/pronestinicolas1-del/TrabajoFacultad2" class="project-link" target="_blank" rel="noopener noreferrer">
+                Ver en GitHub
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6 2h8v8m0 0l-8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; <span id="year"></span> Tu Nombre. Diseñado y desarrollado con <span class="heart">♥</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
